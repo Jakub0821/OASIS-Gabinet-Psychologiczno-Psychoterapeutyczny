@@ -1,0 +1,134 @@
+/* Resetowanie domyślnych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Stylizacja dla całej strony */
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Kontener ogólny */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Nagłówek */
+header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #e91e63;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+header h1 span {
+    font-size: 14px;
+    color: #555;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e91e63;
+}
+
+/* Sekcja "O mnie" */
+.about {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about img {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #e91e63;
+}
+
+.about .text {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about h3 {
+    font-size: 22px;
+    color: #e91e63;
+    margin-top: 25px;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.about ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Stopka */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .about img {
+        width: 140px;
+    }
+
+    .about h2 {
+        font-size: 26px;
+    }
+
+    .about h3 {
+        font-size: 20px;
+    }
+}
