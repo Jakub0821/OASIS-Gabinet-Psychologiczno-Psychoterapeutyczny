@@ -59,12 +59,16 @@ nav a:hover {
 
 /* Hero */
 .hero {
-    background: url('hero-image.jpg') center/cover no-repeat;
-    color: white;
+    background: url('/images/tapeta.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px; /* Dopasuj wysokość według potrzeb */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 80px 20px;
-    background-color: #e91e63;
+    color: white; /* Jeśli potrzebujesz białego tekstu dla lepszej widoczności */
 }
+
 
 .hero h2 {
     font-size: 32px;
