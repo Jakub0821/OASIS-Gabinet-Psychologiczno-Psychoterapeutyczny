@@ -1,3 +1,10 @@
+/* Import nowoczesnej czcionki */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* Zmiana domyślnej czcionki */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 /* Resetowanie domyślnych stylów */
 * {
     margin: 0;
