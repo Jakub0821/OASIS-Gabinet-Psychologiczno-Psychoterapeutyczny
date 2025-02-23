@@ -67,7 +67,7 @@ nav a:hover {
 
 /* Hero */
 .hero {
-    background: url('../images/tapeta.jpg') no-repeat center center;
+    background: url('../images/Tapeta.jpg') no-repeat center center;
     background-size: cover;
     height: 400px; /* Dopasuj wysokość według potrzeb */
     display: flex;
