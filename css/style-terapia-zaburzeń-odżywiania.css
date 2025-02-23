@@ -138,6 +138,18 @@ nav a:hover, nav a.active {
     font-weight: bold;
 }
 
+/* Stopka - zawsze na dole */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Dzięki temu stopka zawsze zostaje na dole */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Responsywność */
 @media (max-width: 768px) {
     .therapy h2 {
