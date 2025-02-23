@@ -6,14 +6,16 @@
     font-family: Arial, sans-serif;
 }
 
-/* Stylizacja dla całej strony */
+/* Styl ogólny */
 body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Kontener ogólny */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -21,40 +23,79 @@ body {
     padding: 20px;
 }
 
-/* Nagłówek */
-header {
-    background: #fff;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* Import nowoczesnej czcionki */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* Zmiana domyślnej czcionki */
+* {
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* Kontener nagłówka */
+.header-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Stylizacja nazwy gabinetu */
 header h1 {
-    color: #e91e63;
-    font-size: 28px;
+    color: black; 
+    font-size: 42px; /* Większa i bardziej czytelna */
+    font-weight: bold;
     margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-header h1 span {
-    font-size: 14px;
-    color: #555;
+/* Usunięcie podkreślenia z linku w nagłówku */
+header h1 a {
+    text-decoration: none; /* Brak podkreślenia */
+    color: black; /* Dopasowany kolor */
+}
+
+header h1 a:hover {
+    color: #4A148C; /* Efekt po najechaniu */
+}
+
+/* Stylizacja podtytułu */
+.subtitle {
+    font-size: 20px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Wyśrodkowanie nawigacji */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    transition: color 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
     color: #e91e63;
 }
 
