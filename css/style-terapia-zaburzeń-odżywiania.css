@@ -99,3 +99,56 @@ nav a:hover, nav a.active {
     color: #e91e63;
 }
 
+/* Sekcja terapii */
+.therapy {
+    background: #f3e5f5; /* Jasny fioletowy tło */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.therapy h2 {
+    font-size: 32px;
+    color: #6A1B9A; /* Kolor nagłówka */
+    margin-bottom: 20px;
+}
+
+.therapy p {
+    font-size: 18px;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.therapy ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.therapy ul li {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #4A148C;
+    font-weight: bold;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .therapy h2 {
+        font-size: 28px;
+    }
+    
+    .therapy p {
+        font-size: 16px;
+    }
+    
+    .therapy ul li {
+        font-size: 16px;
+    }
+}
