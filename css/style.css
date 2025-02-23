@@ -11,6 +11,9 @@ body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -36,17 +39,29 @@ body {
 
 /* Stylizacja nazwy gabinetu */
 header h1 {
-    color: #e91e63;
-    font-size: 36px; /* Powiększenie nazwy */
+    color: black; 
+    font-size: 42px; /* Większa i bardziej czytelna */
     font-weight: bold;
     margin-bottom: 5px;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
+/* Usunięcie podkreślenia z linku w nagłówku */
+header h1 a {
+    text-decoration: none; /* Brak podkreślenia */
+    color: black; /* Dopasowany kolor */
+}
+
+header h1 a:hover {
+    color: #4A148C; /* Efekt po najechaniu */
+}
+
+/* Stylizacja podtytułu */
 .subtitle {
-    font-size: 18px; /* Lepsza widoczność podtytułu */
-    color: #555;
-    font-weight: 400;
+    font-size: 20px;
+    color: #666;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
@@ -54,9 +69,11 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     background: #fff;
     padding: 15px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 nav ul {
@@ -67,7 +84,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav a {
@@ -86,12 +103,12 @@ nav a:hover, nav a.active {
 .hero {
     background: url('../images/Tapeta.jpg') no-repeat center center;
     background-size: cover;
-    height: 400px; /* Dopasuj wysokość według potrzeb */
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; /* Jeśli potrzebujesz białego tekstu dla lepszej widoczności */
+    color: white;
 }
 
 .hero h2 {
@@ -140,23 +157,14 @@ form button:hover {
     background: #d81b60;
 }
 
-/* Stopka */
+/* Stopka - zawsze na dole */
 footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-/* Responsywność */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header h1 {
-        text-align: center;
-    }
+    padding: 15px 0;
+    margin-top: auto; /* Dzięki temu stopka zawsze zostaje na dole */
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
