@@ -122,7 +122,7 @@ nav a:hover, nav a.active {
 }
 
 /* Stopka - zawsze na dole */
-.footer {
+footer {
     background: #333;
     color: white;
     text-align: center;
