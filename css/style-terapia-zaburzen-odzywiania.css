@@ -108,7 +108,7 @@ nav a:hover, nav a.active {
 
 .therapy h2 {
     font-size: 32px;
-    color: #6A1B9A;
+    color: #f3e5f5;
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -148,7 +148,7 @@ nav a:hover, nav a.active {
 }
 
 /* Stopka - zawsze na dole */
-.footer {
+footer {
     background: #333;
     color: white;
     text-align: center;
