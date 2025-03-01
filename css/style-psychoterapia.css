@@ -126,13 +126,13 @@ nav a:hover, nav a.active {
     border-radius: 8px;
 }
 
-/* Stopka - zawsze na dole */
-.footer {
+/* Poprawiona stopka */
+footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 15px 0;
-    margin-top: auto; /* Dzięki temu stopka zawsze zostaje na dole */
+    margin-top: auto; /* To sprawi, że stopka będzie zawsze na dole */
     position: relative;
     bottom: 0;
     width: 100%;
