@@ -101,15 +101,16 @@ nav a:hover, nav a.active {
 
 /* Sekcja terapii */
 .therapy {
-    background: #f3e5f5; /* Jasny fioletowy tło */
+    background: #f3e5f5; /* Jasne tło */
     padding: 60px 0;
     text-align: center;
 }
 
 .therapy h2 {
     font-size: 32px;
-    color: #6A1B9A; /* Kolor nagłówka */
+    color: #6A1B9A;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .therapy p {
@@ -120,22 +121,30 @@ nav a:hover, nav a.active {
     line-height: 1.6;
 }
 
-.therapy ul {
-    list-style: none;
-    padding: 0;
-    max-width: 600px;
-    margin: 0 auto;
+/* Nowoczesna lista obszarów pracy */
+.therapy-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.therapy ul li {
-    background: #fff;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.therapy-item {
     font-size: 18px;
-    color: #4A148C;
-    font-weight: bold;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.therapy-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Stopka - zawsze na dole */
