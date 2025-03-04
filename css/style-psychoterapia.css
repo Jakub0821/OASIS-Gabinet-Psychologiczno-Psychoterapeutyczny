@@ -99,40 +99,52 @@ nav a:hover, nav a.active {
     color: #e91e63;
 }
 
-/* Sekcja "Psychoterapia" */
+/* Sekcja usług */
 .services {
-    padding: 50px 0;
-    background-color: #fff;
+    padding: 60px 0;
+    background-color: #f8f8f8;
     text-align: center;
 }
 
 .services h2 {
-    font-size: 30px;
-    color: #4A148C;
-    margin-bottom: 20px;
+    font-size: 32px;
+    color: #6A1B9A;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
-/* Nowa stylizacja listy usług */
-.services-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+/* Układ siatkowy usług */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
+/* Pojedynczy element usługi */
 .service-item {
-    font-size: 18px;
-    padding: 15px;
-    width: 80%;
-    max-width: 600px;
     background: white;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
 }
 
+.service-item h3 {
+    font-size: 20px;
+    color: #4A148C;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Efekt hover (podświetlenie) */
 .service-item:hover {
     transform: scale(1.05);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
@@ -163,5 +175,13 @@ footer {
 
     .services h2 {
         font-size: 26px;
+    }
+
+    .service-item h3 {
+        font-size: 18px;
+    }
+    
+    .service-item p {
+        font-size: 14px;
     }
 }
