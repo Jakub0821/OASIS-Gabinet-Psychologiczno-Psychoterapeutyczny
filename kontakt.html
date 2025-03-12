@@ -27,14 +27,24 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Kontakt</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Twoje imię" required>
-                <input type="email" name="email" placeholder="Twój e-mail" required>
-                <textarea name="message" placeholder="Wiadomość" required></textarea>
+            <p>Masz pytania? Wypełnij formularz, a skontaktuję się z Tobą jak najszybciej.</p>
+    
+            <form action="send-email.php" method="POST"> 
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" placeholder="Twoje imię" required>
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Twój e-mail" required>
+    
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" placeholder="Treść wiadomości" required></textarea>
+    
                 <button type="submit">Wyślij</button>
             </form>
+            <p id="response-message"></p>
         </div>
     </section>
+    
 
     <footer>
         <div class="container">
